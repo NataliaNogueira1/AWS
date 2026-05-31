@@ -1,0 +1,74 @@
+Content Resources
+AWS Academy Cloud Developing
+Content Resources
+Module 2: Introduction to Developing on AWS
+AWS SDK Code ExamplesLinks to an external site.
+AWS Developer CenterLinks to an external site.
+Tools to Build on AWSLinks to an external site.
+Amazon Q Developer User GuideLinks to an external site.
+AWS Command Line InterfaceLinks to an external site.
+
+Module 3: Developing Storage Solutions
+Amazon S3Links to an external site.
+AWS Global Cloud InfrastructureLinks to an external site.
+Amazon S3 User GuideLinks to an external site.
+Amazon S3 FAQsLinks to an external site.
+
+Module 4: Securing Access to Cloud Resources
+IAM FAQsLinks to an external site.
+IAM TutorialsLinks to an external site.
+Actions, Resources, and Condition Keys for AWS ServicesLinks to an external site.
+
+Module 5: Developing Flexible NoSQL Solutions
+Partitions and Data DistributionLinks to an external site.
+Improving Data Access with Secondary Indexes in DynamoDBLinks to an external site.
+Amazon DynamoDB API ReferenceLinks to an external site.
+
+Module 6: Developing REST APIs
+Whitepaper: Security Overview of Amazon API GatewayLinks to an external site.
+API Gateway HTTP APIsLinks to an external site.
+Amazon API Gateway FAQsLinks to an external site.
+
+Module 7: Developing Event-Driven Serverless Solutions
+Best Practices for Working with AWS Lambda FunctionsLinks to an external site.
+Amazon CloudWatch User GuideLinks to an external site.
+
+Module 8: Introducing Containers and Container Services
+Docker CLI referenceLinks to an external site.
+Amazon Elastic Container Service (Amazon ECS)Links to an external site.
+Amazon Elastic Container Registry (Amazon ECR)Links to an external site.
+AWS FargateLinks to an external site.
+
+Module 9: Caching Information for Scalability
+Comparing Redis and MemcachedLinks to an external site.
+Amazon ElastiCache User GuideLinks to an external site.
+ElastiCache TerminologyLinks to an external site.
+Amazon CloudFront Developer GuideLinks to an external site.
+
+Module 10: Developing with Messaging Services
+Using dead-letter queues in Amazon SQSLinks to an external site.
+Amazon SQS Developer GuideLinks to an external site.
+Common Amazon SNS ScenariosLinks to an external site.
+Amazon SNS API ReferenceLinks to an external site.
+
+Module 11: Defining Workflows to Orchestrate Functions
+AWS Steps FunctionsLinks to an external site.
+AWS Step Functions Developer GuideLinks to an external site.
+AWS Step Functions Use CasesLinks to an external site.
+AWS Step Functions API ReferenceLinks to an external site.
+
+Module 12: Developing Secure Applications on AWS
+Blog Post: Use AWS Secrets Manager to Simplify the Management of Private CertificatesLinks to an external site.
+AWS Certificate ManagerLinks to an external site.
+Security Best Practices in IAMLinks to an external site.
+Amazon Cognito Developer GuideLinks to an external site.
+
+Module 13: Automating Deployment Using CI/CD Pipelines
+Whitepaper: Overview of Deployment Options on AWSLinks to an external site.
+Build a Serverless Web Application using Generative AI TutorialLinks to an external site.
+
+Module 14: Bridging to Certification
+AWS Certified Developer – Associate Exam GuideLinks to an external site.
+AWS Certified Developer – Associate Sample Exam QuestionsLinks to an external site.
+AWS Well-ArchitectedLinks to an external site.
+AWS DocumentationLinks to an external site.

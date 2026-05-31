@@ -1,0 +1,84 @@
+Pergunta,Resposta
+Quais são as 6 fases do SDLC?,Planejar; Definir; Projetar; Desenvolver; Implantar; Manter
+Quais são as 3 formas de interagir com as APIs da AWS?,Console de Gerenciamento; AWS CLI; AWS SDKs
+Qual benefício importante do AWS CloudShell?,Ele herda suas credenciais do console de gerenciamento AWS
+O que é o Amazon Q Developer?,Um assistente de codificação com IA generativa
+Como especificar a região no SDK Python (Boto3)?,Definindo a região ao instanciar o cliente de serviço
+Qual código HTTP ao acessar um recurso AWS que não existe?,Série 400 (erro do cliente)
+O que organiza o namespace do S3 no nível mais alto?,Bucket (nome globalmente único em toda a AWS)
+Após ativar versionamento no S3 ele pode ser desativado?,Não. Uma vez ativado só pode ser suspenso; nunca desativado
+Qual o maior tamanho de objeto em um único PUT no S3?,5 GB
+O que compartilhar para dar acesso temporário a objetos S3 sem credenciais?,Uma URL pré-assinada (pre-signed URL)
+Como criptografar objetos S3 em trânsito?,SSL/TLS (Secure Sockets Layer / Transport Layer Security)
+Por que imagens de outro bucket não aparecem em site estático S3?,CORS não foi habilitado no bucket onde os ativos estão armazenados
+Qual ação protege contra exclusão acidental de documentos no S3?,Armazenar em bucket S3 e habilitar versionamento
+Do que o cliente AWS é responsável no modelo de responsabilidade compartilhada?,Configuração do grupo de segurança e dados do lado do cliente
+Qual o formato das políticas IAM?,JSON (JavaScript Object Notation)
+Qual a recomendação AWS para proteger credenciais em instâncias EC2?,Criar uma IAM Role e associá-la à instância EC2 (não usar Access Key)
+O que acontece quando há Deny explícito e Allow para mesma ação no IAM?,Deny explícito SEMPRE sobrepõe o Allow
+Qual o comportamento padrão do IAM para requisições?,Por padrão todas as requisições são negadas (implicit deny)
+Uma policy anexada a um grupo IAM é de que tipo?,Identity-based (baseada em identidade)
+Qual afirmação descreve melhor o Amazon DynamoDB?,Banco de dados chave-valor e documento que escala horizontalmente para aplicativos em escala de internet
+Para consultar por atributos diferentes da PK no DynamoDB o que configurar?,Índice Secundário Global (Global Secondary Index - GSI)
+Como garantir operações tudo-ou-nada no DynamoDB?,Usar transações do DynamoDB (DynamoDB Transactions)
+Como enviar mudanças do DynamoDB para Lambda automaticamente?,Habilitar DynamoDB Streams na tabela
+O que é verdade sobre Global Tables do DynamoDB?,DynamoDB cria tabelas idênticas e propaga mudanças para regiões especificadas automaticamente
+Quantos dias o point-in-time recovery do DynamoDB cobre?,Últimos 35 dias
+O que descreve melhor uma API RESTful?,Uma API que segue os princípios do estilo Representational State Transfer
+Quando usar WebSocket APIs no API Gateway?,Aplicações real-time como chat em tempo real
+Como transformar request antes de enviar ao backend no API Gateway?,Usar mapping template para transformar a requisição
+Quais elementos fazem parte da URI base gerada pelo API Gateway?,Region e stage name
+Como manter ambientes dev/prod com LEAST configuration no API Gateway?,Uma REST API com stage variable no lugar do alias; deploy em dois stages com valores diferentes
+Como proteger APIs contra SQL injection e XSS?,Usar AWS WAF com Amazon API Gateway
+O que a métrica Integration Latency do API Gateway indica?,Responsividade do backend
+Qual restrição do Lambda NÃO pode ser modificada?,Burst quota
+Como o API Gateway invoca o Lambda?,Diretamente com invocação síncrona (synchronous invocation)
+O que requer permissões na Execution Role do Lambda?,Lambda escrevendo no DynamoDB; Lambda fazendo poll em fila SQS
+O que é o function handler no Lambda?,O ponto de entrada que Lambda chama para iniciar a execução da função
+Quando usar provisioned concurrency no Lambda?,Quando app responde lentamente para primeiros usuários do dia (cold start)
+Como fazer deploy de pacote Lambda com mais de 50 MB?,Upload para bucket S3 e especificar bucket name e object key no console Lambda
+O que significa um ARN Lambda com :PROD no final?,Invoca a versão da função associada ao alias PROD
+Qual primeiro passo no X-Ray para troubleshooting de erros?,Usar o service map para localizar erros visualmente na aplicação
+Qual benefício levou indústria de software a usar containers?,A abstração dos detalhes do que está sendo enviado aumenta a agilidade do sistema
+O que é verdade sobre um Dockerfile?,Cada instrução no Dockerfile cria uma camada read-only na imagem
+Por que escolher containers para microsserviços?,Cada container pode usar a linguagem e tecnologia mais adequada para o serviço
+Por que usar um serviço de orquestração de containers?,Para agendar starts/stops de containers e determinar onde colocá-los
+O que é Application no Elastic Beanstalk?,Uma coleção lógica de componentes (similar a uma pasta)
+Qual política de deploy do Beanstalk usar para canary testing?,Traffic Splitting
+Qual opção escolher para cache in-memory key-value com read replicas?,Amazon ElastiCache for Redis
+Qual a responsabilidade do desenvolvedor ao usar ElastiCache?,Escrever código que busca no cache e se não encontrar busca na origem (cache-aside)
+Como melhorar performance para usuários distantes geograficamente?,Configurar distribuição CloudFront com edge locations próximas aos usuários
+Como aumentar o cache hit ratio no CloudFront?,Incluir apenas os valores mínimos necessários na cache key
+O que acontece após um arquivo expirar no CloudFront?,Na próxima requisição o CloudFront encaminha o request ao origin server
+Quando usar CloudFront Functions?,Para redirecionar viewer para URL diferente e adicionar custom response header
+Qual benefício do lazy loading como estratégia de cache?,Evita encher o cache com dados que não são requisitados
+Como uma message queue (SQS) processa mensagens?,Consumers fazem poll na fila para receber mensagens
+Como funciona mensageria pub/sub (SNS)?,Uma nova mensagem no topic é pushed para todos os subscribers do topic
+O que fazer quando mensagens SQS são processadas mais de uma vez?,Aumentar o visibility timeout
+Como reduzir impacto de mensagens com falha repetida no SQS?,Adicionar dead-letter queue com maxReceiveCount baixo
+O que é um SNS Topic?,Um ponto de acesso lógico que atua como canal de comunicação
+Como invocar Lambda apenas para pedidos cancelados via SNS?,Configurar filter policy para que a subscription receba apenas mensagens de cancelamento
+Qual tipo de fila SQS garante processamento em ordem?,FIFO SQS queue (não standard queue; não Kinesis para transações individuais)
+O que usar para colocar registros em um Kinesis data stream?,Kinesis Producer Library (KPL)
+Quando usar Step Functions?,Quando aplicação serverless precisa executar funções Lambda dependentes entre si
+Qual state usar para lógica condicional (if/else) no Step Functions?,Choice state
+Qual state usar para executar mesma função para cada item de uma lista?,Map state
+Qual state usar para executar verificações independentes em paralelo?,Parallel state
+O que Succeed e Fail states têm em comum no Step Functions?,Ambos NÃO incluem o campo Next
+Quando usar Express workflows no Step Functions?,Para alta taxa de eventos como dispositivos IoT
+O que é verdade sobre AWS Certificate Manager (ACM)?,ACM gerencia renovação de certificados públicos E privados
+Qual a diferença entre STS com federated users e com IAM users?,Federated: autenticação contra IdP externo. IAM users: autenticação contra IAM
+Como investigar quem deletou arquivos de um bucket S3?,Usar AWS CloudTrail para buscar eventos de delete object no bucket
+Qual recurso do Cognito usar para sign-up e sign-in?,Amazon Cognito User Pool (retorna JWTs)
+O que é verdade sobre Cognito Identity Pools?,Usuários obtêm credenciais temporárias limitadas para acessar outros serviços AWS
+Como fazer log de eventos de sign-in com Cognito?,Invocar Lambda function no evento post-authentication (não API Gateway)
+O que CI (Continuous Integration) requer?,Que equipes escrevam testes automatizados
+Qual seção do CloudFormation usar para mesmo template em test e prod?,Seção Conditions para controlar criação condicional de recursos
+O que é um CloudFormation stack?,Uma unidade de deployment (cria/atualiza/deleta recursos juntos)
+Como um template SAM difere de CloudFormation?,A seção Globals é encontrada APENAS em templates SAM
+O que cria AWS::Serverless::SimpleTable no SAM?,Uma tabela Amazon DynamoDB
+Quantos IPs a AWS reserva por sub-rede na VPC?,5 IPs (primeiro; último e 3 intermediários)
+Qual a diferença entre subnet pública e privada?,Pública tem rota para Internet Gateway; privada não
+Onde fica o NAT Gateway?,Na sub-rede PÚBLICA mas serve para dar acesso à internet para a sub-rede PRIVADA
+Qual a diferença entre Security Group e Network ACL?,SG: stateful; só ALLOW; nível instância. NACL: stateless; ALLOW e DENY; nível sub-rede
+Bucket S3 fica dentro de VPC?,Não. Bucket S3 é um serviço global que não fica dentro de VPC

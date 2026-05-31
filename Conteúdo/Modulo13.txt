@@ -1,0 +1,9 @@
+200-ACCDEV-20-EN-M13SG
+<>
+52
+ of 52
++-<->
+Fechar
+© 2024, Amazon Web Services, Inc. or its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited. All trademarks are the property of their owners. 
+45Additional resources•Whitepapers:•Introduction to DevOps on AWS•Infrastructure as Code•Overview of Deployment Options on AWS•Practicing Continuous Integration and Continuous Delivery on AWS•Tutorial:•Build a Serverless Web ApplicationTo learn more about the topics covered in this module, you might find the following additional resources helpful:Whitepapers:•Introduction to DevOps on AWS: https://d1.awsstatic.com/whitepapers/AWS_DevOps.pdf.•Infrastructure as Code: https://d1.awsstatic.com/whitepapers/DevOps/infrastructure-as-code.pdf.•Overview of Deployment Options on AWS: https://d1.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf.•Practicing Continuous Integration and Continuous Delivery on AWS: https://d1.awsstatic.com/whitepapers/DevOps/practicing-continuous-integration-continuous-delivery-on-AWS.pdf.Tutorial:•Build a Serverless Web Application: https://aws.amazon.com/getting-started/projects/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/.AWS Training and Certification Module 13: Automating Deployment Using CI/CD Pipelines © 2024, Amazon Web Services, Inc. or its affiliates. All rights reserved. 51 
+46Thank youCorrections, feedback, or other questions?Contact us at https://support.aws.amazon.com/#/contacts/aws-academy.Thank you for completing this module.AWS Training and Certification Module 13: Automating Deployment Using CI/CD Pipelines © 2024, Amazon Web Services, Inc. or its affiliates. All rights reserved. 52 

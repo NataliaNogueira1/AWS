@@ -1,0 +1,9 @@
+200-ACCDEV-20-EN-M14SG
+<>
+25
+ of 25
++-<->
+Fechar
+Contents Module 14: Bridging to Certification 4 AWS Training and Certification AWS Academy Cloud Developing © 2024, Amazon Web Services, Inc. or its affiliates. All rights reserved. 3 
+20Module summaryIn summary, in this module, you learned how to do the following:•Identify how to prepare for the AWS Certified Developer –Associate exam•Identify where to find resourcesIn summary, in this module, you learned how to do the following:•Identify how to prepare for the AWS Certified Developer –Associate exam•Identify where to find resourcesAWS Training and Certification Module 14: Bridging to Certification © 2024, Amazon Web Services, Inc. or its affiliates. All rights reserved. 24 
+21Thank youCorrections, feedback, or other questions?Contact us at https://support.aws.amazon.com/#/contacts/aws-academy.Thank you for completing this module.AWS Training and Certification Module 14: Bridging to Certification © 2024, Amazon Web Services, Inc. or its affiliates. All rights reserved. 25 

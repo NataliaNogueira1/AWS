@@ -1,0 +1,8 @@
+200-ACCDEV-20-EN-M10SG
+<>
+83
+ of 83
++-<->
+Fechar
+74Sample exam question: AnswerThe correct answer is C.ChoiceResponseASend transaction messages to a standard SQS queue.BPut transaction messages on to a Kinesis data stream.CSend transaction messages to a FIFO SQS queue.DConfigure Amazon ECS with a cluster of EC2 instances that run Docker containers.Look at the answer choices and rule them out based on the keywords that were previously highlighted.The correct answer is C. Send transaction messages to a FIFO SQS queue.Kinesis Data Streams does maintain record order when processing records on a stream, but the description of individual transaction processing implies that you need a queue. To ensure in-order processing, you need a FIFO queue instead of a standard queue.AWS Training and Certification Module 10: Developing with Messaging Services © 2024, Amazon Web Services, Inc. or its affiliates. All rights reserved. 82 
+75Thank youCorrections, feedback, or other questions?Contact us at https://support.aws.amazon.com/#/contacts/aws-academy.Thank you for completing this module.AWS Training and Certification Module 10: Developing with Messaging Services © 2024, Amazon Web Services, Inc. or its affiliates. All rights reserved. 83 
